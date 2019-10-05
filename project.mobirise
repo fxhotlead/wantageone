@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "cryptoguadagno",
-    "currentPage": "index.html",
+    "currentPage": "page7.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -31,7 +31,7 @@
     "path": "@PROJECT_PATH@",
     "versionFirst": "4.10.8",
     "siteFonts": [],
-    "uniqCompNum": 29,
+    "uniqCompNum": 32,
     "versionPublish": "4.10.8"
   },
   "pages": {
@@ -318,32 +318,6 @@
         {
           "alias": false,
           "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 15px)",
-              "padding-bottom": "(@paddingBottom * 15px)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "P": {
-              "color": "#767676"
-            }
-          },
-          "_name": "header16",
-          "_customHTML": "<section class=\"header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Schermo intero\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Superiore\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Inferiore\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Mostra titolo\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Mostra sottotitoli\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Mostra Testo\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Mostra pulsanti\" name=\"showButtons\" checked>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Immagine di sfondo\" value=\"../_images/background4.jpg\" parallax>\n            <input type=\"color\" title=\"Colore di sfondo\" value=\"#efefef\" selected>\n            <input type=\"video\" title=\"Video di sfondo\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Sovrapponi\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Colore sovrapposto\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacità\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"col-md-10 align-center\">\n                <h1 class=\"mbr-section-title mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                    Rendite da Cryptovalute</h1>\n                <h3 class=\"mbr-section-subtitle mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">\n                    Bellissimi siti web mobile\n                </h3>\n                <p class=\"mbr-text pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                    Se stai cercando un modo crearti delle rendite &nbsp;Automatiche da Cryptovalute, sei finalmente nel posto giusto.</p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-black-outline\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">Cosa sono i Bitcoin Video n°1</a></div>\n            </div>\n        </div>\n    </div>\n\n</section>",
-          "_cid": "rE0RUVW57O",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {},
-          "_anchor": "header16-9"
-        },
-        {
-          "alias": false,
-          "_styles": {
             "background": "@bgColor",
             "& when (@fullWidth = false)": {
               "padding-top": "(@paddingTop * 15px)",
@@ -365,13 +339,39 @@
             }
           },
           "_name": "video3",
-          "_customHTML": "<section group=\"Images &amp; Videos\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <input type=\"checkbox\" title=\"Intera larghezza\" name=\"fullWidth\">\n\n    <input type=\"range\" inline=\"\" title=\"Superiore\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"range\" inline=\"\" title=\"Inferiore\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"range\" inline=\"\" title=\"Larghezza\" name=\"videoSize\" min=\"20\" max=\"100\" value=\"80\" step=\"1\" condition=\"fullWidth==false\">\n\n    <input type=\"color\" title=\"Colore di sfondo\" name=\"bgColor\" value=\"#149dcc\" condition=\"fullWidth==false\">\n    <input type=\"checkbox\" title=\"Sfumatura\" name=\"gradientBg\" checked=\"\" condition=\"fullWidth==false\">\n    <input type=\"color\" title=\"Colore 2\" name=\"color2\" value=\"#ffffff\" condition=\"gradientBg\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <figure class=\"mbr-figure align-center\" mbr-class=\"{'container':fullWidth==false}\">\n        <div class=\"video-block\" mbr-style=\"{'width':videoSize+'%'}\">\n            <div mbr-video=\"\">\n                <iframe src=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\"></iframe>\n            </div>\n        </div>\n    </figure>\n</section>\n",
+          "_customHTML": "<section group=\"Images & Videos\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <input type=\"checkbox\" title=\"Intera larghezza\" name=\"fullWidth\">\n\n    <input type=\"range\" inline title=\"Superiore\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"range\" inline title=\"Inferiore\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"range\" inline title=\"Larghezza\" name=\"videoSize\" min=\"20\" max=\"100\" value=\"80\" step=\"1\" condition=\"fullWidth==false\">\n\n    <input type=\"color\" title=\"Colore di sfondo\" name=\"bgColor\" value=\"#149dcc\" condition=\"fullWidth==false\">\n    <input type=\"checkbox\" title=\"Sfumatura\" name=\"gradientBg\" checked condition=\"fullWidth==false\">\n    <input type=\"color\" title=\"Colore 2\" name=\"color2\" value=\"#ffffff\" condition=\"gradientBg\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <figure class=\"mbr-figure align-center\" mbr-class=\"{'container':fullWidth==false}\">\n        <div class=\"video-block\" mbr-style=\"{'width':videoSize+'%'}\">\n            <div mbr-video>\n                <iframe src=\"https://youtu.be/3lQQIH0xUNg?loop=0&autoplay=0\"></iframe>\n            </div>\n        </div>\n    </figure>\n</section>",
           "_cid": "rE0RUWsE8H",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
           "_params": {},
           "_anchor": "video3-a"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "P": {
+              "color": "#767676"
+            }
+          },
+          "_name": "header16",
+          "_customHTML": "<section class=\"header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Schermo intero\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Superiore\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Inferiore\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Mostra titolo\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Mostra sottotitoli\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Mostra Testo\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Mostra pulsanti\" name=\"showButtons\" checked>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Immagine di sfondo\" value=\"../_images/background4.jpg\" parallax>\n            <input type=\"color\" title=\"Colore di sfondo\" value=\"#efefef\" selected>\n            <input type=\"video\" title=\"Video di sfondo\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Sovrapponi\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Colore sovrapposto\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacità\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"col-md-10 align-center\">\n                <h1 class=\"mbr-section-title mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                    Swing e Multiple Trading&nbsp;</h1>\n                <h3 class=\"mbr-section-subtitle mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">\n                    Bellissimi siti web mobile\n                </h3>\n                <p class=\"mbr-text pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In questo\n<br>\n<br>breve video vorrei trasmettervi una\n<br>\n<br>tipologia di operatività molto semplice\n<br>\n<br>end o week quindi di medio lungo termine\n<br>\n<br>per affrontare i mercati valutari indici\n<br>\n<br>di borsa materie prime principali ma\n<br>\n<br>anche titoli azionari su che tipo di\n<br>\n<br>watch list si può lavorare\n<br>\n<br>ovviamente si possono andare a prendere\n<br>\n<br>le maggiori coppie di valute quindi\n<br>\n<br>dall'eurodollaro alla sterlina dollaro\n<br>\n<br>passando per dollaro yen neo zelanda sul\n<br>\n<br>volo l'americano ma anche andando su\n<br>\n<br>coppie un pelino nelle tre date ma con\n<br>\n<br>delle ottime interessanti opportunità\n<br>\n<br>come per esempio in questo caso vediamo\n<br>\n<br>eur aud stellina nello zelanda canada in\n<br>\n<br>australia sul zelanda fra le sue yen\n<br>\n<br>quindi anche coppie che hanno\n<br>\n<br>leggermente un po più di spread ma la\n<br>\n<br>tipologia di operatività sarà un\n<br>\n<br>operatività di medio lungo termine\n<br>\n<br>quindi da una settimana due tre quattro\n<br>\n<br>settimane addirittura anche di più\n<br>\n<br>operativita quindi differente magari\n<br>\n<br>dalle solite che mi sentite spesso\n<br>\n<br>trasmettere ma che hai quanto importante\n<br>\n<br>per diversificare il proprio portfolio\n<br>\n<br>di trading\n<br>\n<br>detto questo possiamo vedere nella\n<br>\n<br>strategia in questo caso su una coppia\n<br>\n<br>di valute che in questo caso eur aud si\n<br>\n<br>opererà esclusivamente in trend e\n<br>\n<br>attraverso una media mobile a 21 periodi\n<br>\n<br>esponenziale prezzi di chiusura che\n<br>\n<br>ovviamente attraverso la proprietà in\n<br>\n<br>tranquillamente su indicatori trovate\n<br>\n<br>che cos'è che si va a fare\n<br>\n<br>si va praticamente a ricercare un\n<br>\n<br>movimento di in questo caso di ribasso\n<br>\n<br>sotto la media che duri almeno in questo\n<br>\n<br>caso almeno più di 34 57 candele sotto\n<br>\n<br>la media\n<br>\n<br>ma soprattutto che cosa deve fare la\n<br>\n<br>prima il primo input dopo il ribasso\n<br>\n<br>deve esserci un arrivo un tocco o un\n<br>\n<br>avvicinamento molto molto molto chiaro\n<br>\n<br>verso la media mobile in questo caso\n<br>\n<br>vedete che dopo il forte ribasso c'è\n<br>\n<br>stato un approccio verso mandiamo bene\n<br>\n<br>ma questo non ha per me influenza ma il\n<br>\n<br>vero punto è proprio qui dove il mercato\n<br>\n<br>tocca la media che cosa si fa\n<br>\n<br>si va quindi ad aspettare il trucco\n<br>\n<br>della media e quindi la in questo caso\n<br>\n<br>sconfitta dei compratori da parte dei\n<br>\n<br>venditori che quindi hanno la meglio\n<br>\n<br>quindi si vede proprio che il mercato\n<br>\n<br>chiude ribassista e in questo caso che\n<br>\n<br>quando si fa si può andare a prendere\n<br>\n<br>questa candela si va a ricercare si va a\n<br>\n<br>ricercare l'acquisto però è la vendita\n<br>\n<br>scusate sul livello al 50 per cento\n<br>\n<br>quindi si va a fare un cell stop una\n<br>\n<br>volta che vi si chiude questa candela\n<br>\n<br>sul lento week quindi sel stop al 50 per\n<br>\n<br>cento di estensione successiva\n<br>\n<br>su questo livello quindi qui andrò a\n<br>\n<br>porre il mio set stop il mio stop loss\n<br>\n<br>può essere tranquillamente il 50 per\n<br>\n<br>cento che mi ero inserito e il target\n<br>\n<br>potrebbe essere in questo caso di un\n<br>\n<br>nuovo no oppure si potrebbe andare a\n<br>\n<br>gestire l'operazione attraverso\n<br>\n<br>una gestione ovviamente lenta\n<br>\n<br>settimanale e quindi magari si può darsi\n<br>\n<br>un obiettivo e si può l'inizio stare a\n<br>\n<br>break even magari per alcuni già alcune\n<br>\n<br>settimane nel caso in cui ovviamente il\n<br>\n<br>mercato non vado a fare subito una o due\n<br>\n<br>settimane di forte ribasso quindi di\n<br>\n<br>forte direzionalità a mio favore\n<br>\n<br>nel momento in cui comprime un po\n<br>\n<br>ovviamente magari in questo caso come è\n<br>\n<br>successo si potrebbe tranquillamente\n<br>\n<br>andare a spostare il proprio stop che\n<br>\n<br>all'inizio ovviamente qui in uno stop a\n<br>\n<br>rischio zero quindi praticamente\n<br>\n<br>leggermente sotto il 20 stop\n<br>\n<br>e in questo caso dovremmo avere un\n<br>\n<br>operatività alquanto semplice ma\n<br>\n<br>soprattutto lenta tranquilla che ci\n<br>\n<br>permetta di fare tranquillamente altro\n<br>\n<br>trading come quello sul daily kos\n<br>\n<br>l'intraday quindi più veloce e questo\n<br>\n<br>dovrebbe essere una cassetta continua\n<br>\n<br>che ovviamente da cui andare a prendere\n<br>\n<br>i profitti\n<br>\n<br>quindi poiché che fare nel momento in\n<br>\n<br>cui ovviamente c'è la prima che il primo\n<br>\n<br>input e il movimento sotto la media il\n<br>\n<br>tocco quindi dove si può entrare poi si\n<br>\n<br>possono andare a fare se sia già entrata\n<br>\n<br>nella prima degli incrementi di\n<br>\n<br>posizione\n<br>\n<br>ogni volta che il mercato mi fa dalle\n<br>\n<br>due alle tre candele consecutive verdi\n<br>\n<br>in questo caso con massimi crescenti\n<br>\n<br>minimi crescenti quindi un po stile chi\n<br>\n<br>se l chi mai di oliver bellezza e si\n<br>\n<br>potrebbe andare praticamente a prendere\n<br>\n<br>ogni volta la vendita in questo caso\n<br>\n<br>sotto che potevo andare incrementare\n<br>\n<br>ogni volta con delle vendite ogni volta\n<br>\n<br>che il mercato ne fa almeno due non più\n<br>\n<br>di tre quindi non questo basta quindi si\n<br>\n<br>potrebbe tranquillamente ripeto perché è\n<br>\n<br>una tipologia di operatività sul grafico\n<br>\n<br>settimanale quindi doveva essere\n<br>\n<br>ovviamente vista in questo modo andare\n<br>\n<br>incrementare o comunque se non si è\n<br>\n<br>entrati su questa una volta che sul\n<br>\n<br>settimanale sia questa cosa e in accanto\n<br>\n<br>quindi continua ogni volta che abbiamo\n<br>\n<br>due tre candele che hanno minimi\n<br>\n<br>crescenti massimi crescenti come questi\n<br>\n<br>due casi tra casi scusate quattro casi\n<br>\n<br>in 1 2 3 e 4 si può andare a vendere\n<br>\n<br>sempre sotto il minimo con stop\n<br>\n<br>ovviamente si può mettere direttamente\n<br>\n<br>sopra il massimo delle candele di setup\n<br>\n<br>quindi un'operatività veramente molto\n<br>\n<br>molto interessante che può essere\n<br>\n<br>utilizzata da chiunque in modo veramente\n<br>\n<br>lasciando tempo libero al trader\n<br>\n<br>perché si fa che esclusivamente la\n<br>\n<br>domenica facendo un'analisi per poi\n<br>\n<br>impostare gli ordini di lunedì\n<br>\n<br>bene io ho finito per qualsiasi cosa\n<br>\n<br>potete scrivere ovviamente a lei g per\n<br>\n<br>informazioni riguardante appunto\n<br>\n<br>l'operatività oppure direttamente a mare\n<br>\n<br>uno ska nato su info chiocciola share\n<br>\n<br>forex.com o info chiocciola trading\n<br>\n<br>finanziario professionale punto com e io\n<br>\n<br>vi saluto e vi auguro buon esempio a\n<br>\n<br>tutti</p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-black-outline\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">Cosa sono i Bitcoin Video n°1</a></div>\n            </div>\n        </div>\n    </div>\n\n</section>",
+          "_cid": "rE0RUVW57O",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "header16-9"
         },
         {
           "alias": false,
@@ -437,49 +437,6 @@
           "_once": false,
           "_params": {},
           "_anchor": "social-buttons3-b"
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 15px)",
-              "padding-bottom": "(@paddingBottom * 15px)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background": "linear-gradient(45deg, @bg-value, @color2)"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            ".mbr-figure": {
-              "@media (min-width: 992px)": {
-                "padding-left": "4rem"
-              },
-              "@media (max-width: 991px)": {
-                "padding-top": "3rem"
-              }
-            },
-            ".media-container-row": {
-              "& when (@reverseContent)": {
-                "flex-direction": "row-reverse",
-                "-webkit-flex-direction": "row-reverse",
-                ".mbr-figure": {
-                  "@media (min-width: 992px)": {
-                    "padding-left": "0",
-                    "padding-right": "4rem"
-                  }
-                }
-              }
-            }
-          },
-          "_name": "header7",
-          "_customHTML": "<section class=\"header7\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Schermo intero\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Superiore\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Inferiore\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Mostra titolo\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Mostra Testo\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Mostra pulsanti\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Media sulla destra/sinistra\" name=\"reverseContent\">\n\n        <input type=\"range\" inline title=\"Dimensione dei Media\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"100\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Immagine di sfondo\" value=\"../_images/background4.jpg\" parallax>\n            <input type=\"color\" title=\"Colore di sfondo\" value=\"#0f7699\" selected>\n            <input type=\"video\" title=\"Video di sfondo\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"color\" name=\"color2\" title=\"Colore 2\" value=\"#ff7f9f\" condition=\"bg.type=='color'\" selected>\n\n        <input type=\"checkbox\" title=\"Sovrapponi\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Colore sovrapposto\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacità\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n\n            <div class=\"media-content align-right\">\n                <h1 class=\"mbr-section-title mbr-white pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                    Intro con video\n                </h1>\n                <div class=\"mbr-section-text mbr-white pb-3\">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                        Intro con il colore di sfondo, i paddings e un video sulla destra. Mobirise ti aiuta a ridurre i tempi di sviluppo fornendoti un editor di siti web flessibile con un'interfaccia drag-and-drop.\n                    </p>\n                </div>\n                <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\">\n                        <a class=\"btn btn-md btn-primary\" href=\"https://mobirise.co\">PER SAPERNE DI PIÙ</a>\n                        <a class=\"btn btn-md btn-white-outline\" href=\"https://mobirise.co\">LIVE DEMO</a>\n                </div>\n            </div>\n\n            <div mbr-video class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                <iframe src=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\"></iframe>\n            </div>\n\n        </div>\n    </div>\n</section>",
-          "_cid": "rE0RUXQUmN",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {},
-          "_anchor": "header7-c"
         }
       ]
     },
@@ -1014,6 +971,141 @@
           "_once": false,
           "_params": {},
           "_anchor": "header7-o"
+        }
+      ]
+    },
+    "page7.html": {
+      "settings": {
+        "title": "Intelligenza Artificiale",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": "",
+        "order": 1
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background": "@bgColor",
+            "& when (@fullWidth = false)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@gradientBg)": {
+              "background": "linear-gradient(0deg, @bgColor, @color2)"
+            },
+            ".video-block": {
+              "margin": "auto",
+              "& when (@fullWidth)": {
+                "width": "100% !important"
+              }
+            },
+            "@media (max-width: 768px)": {
+              ".video-block": {
+                "width": "100% !important"
+              }
+            }
+          },
+          "_name": "video3",
+          "_customHTML": "<section group=\"Images & Videos\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <input type=\"checkbox\" title=\"Intera larghezza\" name=\"fullWidth\">\n\n    <input type=\"range\" inline title=\"Superiore\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"range\" inline title=\"Inferiore\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"range\" inline title=\"Larghezza\" name=\"videoSize\" min=\"20\" max=\"100\" value=\"80\" step=\"1\" condition=\"fullWidth==false\">\n\n    <input type=\"color\" title=\"Colore di sfondo\" name=\"bgColor\" value=\"#149dcc\" condition=\"fullWidth==false\">\n    <input type=\"checkbox\" title=\"Sfumatura\" name=\"gradientBg\" checked condition=\"fullWidth==false\">\n    <input type=\"color\" title=\"Colore 2\" name=\"color2\" value=\"#ffffff\" condition=\"gradientBg\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <figure class=\"mbr-figure align-center\" mbr-class=\"{'container':fullWidth==false}\">\n        <div class=\"video-block\" mbr-style=\"{'width':videoSize+'%'}\">\n            <div mbr-video>\n                <iframe src=\"https://youtu.be/opouWrhDGTo?loop=0&autoplay=0\"></iframe>\n            </div>\n        </div>\n    </figure>\n</section>",
+          "_cid": "rE159T0fut",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "video3-t"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "P": {
+              "color": "#767676"
+            }
+          },
+          "_name": "header16",
+          "_customHTML": "<section class=\"header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Schermo intero\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Superiore\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Inferiore\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Mostra titolo\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Mostra sottotitoli\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Mostra Testo\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Mostra pulsanti\" name=\"showButtons\" checked>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Immagine di sfondo\" value=\"../_images/background4.jpg\" parallax>\n            <input type=\"color\" title=\"Colore di sfondo\" value=\"#efefef\" selected>\n            <input type=\"video\" title=\"Video di sfondo\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Sovrapponi\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Colore sovrapposto\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacità\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"col-md-10 align-center\">\n                <h1 class=\"mbr-section-title mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                    Come Funziona l'intelligenza Artificiale?</h1>\n                <h3 class=\"mbr-section-subtitle mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">\n                    Bellissimi siti web mobile\n                </h3>\n                <p class=\"mbr-text pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Giulia si sveglia ben riposata all'ora giusta,\n<br>\n<br>fa una colazione bilanciata che tiene conto dei suoi bisogni,\n<br>\n<br>sceglie l'outfit corretto per la giornata che l'aspetta,\n<br>\n<br>e si avvia verso l'ufficio seguendo il percorso più veloce\n<br>\n<br>per raggiungerlo senza intoppi.\n<br>\n<br>Infine arriva al lavoro, dove il suo assistente elettronico\n<br>\n<br>le ricorda gli impegni del giorno.\n<br>\n<br>Finita la giornata torna a casa e trova la lavatrice già avviata,\n<br>\n<br>la cena pronta da gustare,\n<br>\n<br>e la sua serie preferita pronta per essere\n<br>guardata.\n<br>\n<br>Negli ultimi anni la nostra vita sta assomigliando sempre di più a quella di Giulia,\n<br>\n<br>una vita ritagliata intorno ai nostri ritmi\n<br>\n<br>dove ogni pezzetto si incastra perfettamente.\n<br>\n<br>Come? Grazie anche alle intelligenze artificiali.\n<br>\n<br>Sebbene siamo ancora lontani da scenari fantascientifici,\n<br>\n<br>se prestiamo attenzione possiamo notare come le intelligenze artificiali siano sempre con noi\n<br>\n<br>in un modo o nell'altro.\n<br>\n<br>La nostra piattaforma di streaming ci consiglia il film perfetto? Intelligenza artificiale.\n<br>\n<br>Un'applicazione ci aiuta a dormire meglio, svegliandoci nella giusta fase del sonno?\n<br>\n<br>Intelligenza artificiale.\n<br>\n<br>Usiamo i comandi vocali per comporre un numero? Intelligenza artificiale.\n<br>\n<br>Ma cos'è esattamente un'intelligenza\n<br>artificiale?\n<br>\n<br>Detto in maniera semplicistica, è\n<br>l'intelligenza dimostrata da una macchina\n<br>\n<br>in contrapposizione a quella naturale tipica del regno animale,\n<br>\n<br>ossia la sua abilità nell'interpretare dati\n<br>esterni,\n<br>\n<br>nell'imparare da essi\n<br>\n<br>e nell'utilizzare le informazioni\n<br>acquisite\n<br>\n<br>per raggiungere determinati obiettivi e risolvere problemi.\n<br>\n<br>Ma come ci riesce?\n<br>\n<br>Poggiandosi su algoritmi semplici o man mano più complessi\n<br>\n<br>che in alcuni la casi la macchina è in grado di migliorare e modificare autonomamente\n<br>\n<br>attraverso l'analisi e l'uso dei dati accumulati nel tempo:\n<br>\n<br>il cosiddetto machine learning.\n<br>\n<br>Così, una vettura a guida autonoma saprà sempre riconoscere certi parametri arbitrari\n<br>\n<br>come la segnaletica stradale. Ma dovrà accumulare esperienza\n<br>\n<br>per reagire in maniera man mano più precisa a ostacoli o nuovi eventi\n<br>\n<br>avvicinandosi alla reattività di un guidatore umano.\n<br>\n<br>La capacità di un chatbot di dialogare come un essere umano\n<br>\n<br>migliora con l'analisi e\n<br>l'immagazzinamento delle risposte\n<br>\n<br>che ottiene da coloro con cui parla, creando database sempre più complessi\n<br>\n<br>di possibili comportamenti e risposte.\n<br>\n<br>Nonostante alcuni siano preoccupati della proliferazione di queste intelligenze artificiali\n<br>\n<br>in diversi settori, soprattutto per questioni di carattere etico, sociale e di privacy,\n<br>\n<br>è indubbio che le intelligenze artificiali possano essere utilizzate per migliorare\n<br>\n<br>la nostra vita quotidiana in maniere innovative.\n<br>\n<br>Università e centri di ricerca stanno sviluppando intelligenze artificiali\n<br>\n<br>capaci di riconoscere la nazionalità della persona che si trovano di fronte\n<br>\n<br>in modo da fornirgli assistenza culturalmente appropriata.\n<br>\n<br>Questo può essere molto utile soprattutto in situazioni delicate\n<br>\n<br>come la cura degli anziani\n<br>\n<br>o l'accoglienza di rifugiati e richiedenti asilo.\n<br>\n<br>Possono sostituire l'intervento umano in situazioni ad alto rischio\n<br>\n<br>come il disinnesco degli ordigni esplosivi o come supporto ai vigili del fuoco.\n<br>\n<br>Venire utilizzate in ambito sanitario per effettuare diagnosi sempre più precise\n<br>\n<br>o permetterci di arrivare in luoghi che credevamo impossibili da raggiungere.\n<br>\n<br>Insomma, le possibilità sono infinite e il futuro che ci aspetta è ancora tutto da definire.\n<br>\n<br>Certo è facile, e anche morbosamente seduttivo pensare a un domani in cui le\n<br>\n<br>macchine governeranno il genere umano.\n<br>\n<br>Ma questo è più una proiezione di come noi intenderemmo un'intelligenza simile alla nostra\n<br>\n<br>e non di quanto sta accadendo realmente.<br></p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-black-outline\" href=\"page2.html#video3-6\" data-app-placeholder=\"Type Text\">Cosa sono i Bitcoin Video n°2</a></div>\n            </div>\n        </div>\n    </div>\n\n</section>",
+          "_cid": "rE159U7Zjo",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "header16-u"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".socicon-bg-facebook": {
+              "background": "#3e5b98",
+              "color": "contrast(#3e5b98)"
+            },
+            ".socicon-bg-twitter": {
+              "background": "#4da7de",
+              "color": "contrast(#4da7de)"
+            },
+            ".socicon-bg-googleplus": {
+              "background": "#dd4b39",
+              "color": "contrast(#dd4b39)"
+            },
+            ".socicon-bg-vkontakte": {
+              "background": "#5a7fa6",
+              "color": "contrast(#5a7fa6)"
+            },
+            ".socicon-bg-odnoklassniki": {
+              "background": "#f48420",
+              "color": "contrast(#f48420)"
+            },
+            ".socicon-bg-pinterest": {
+              "background": "#c92619",
+              "color": "contrast(#c92619)"
+            },
+            ".socicon-bg-mail": {
+              "background": "#134785",
+              "color": "contrast(#134785)"
+            },
+            ".btn-social": {
+              "border": "none !important"
+            },
+            "& when (@squareIcons)": {
+              ".btn-social": {
+                "border-radius": "0 !important"
+              }
+            },
+            "[class^=\"socicon-\"]:before, [class*=\" socicon-\"]:before": {
+              "line-height": "44px"
+            },
+            "@media (max-width: 767px)": {
+              ".btn": {
+                "font-size": "20px !important"
+              }
+            }
+          },
+          "_name": "social-buttons3",
+          "_customHTML": "<section group=\"Social\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" plugins=\"SocialLikes,Socicon\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input inline=\"\" type=\"range\" title=\"Superiore\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        <input inline=\"\" type=\"range\" title=\"Inferiore\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        <input type=\"checkbox\" title=\"Mostra titolo\" name=\"showTitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Icone quadrate\" name=\"squareIcons\">\n        <header>Condividerà la pagina corrente</header>\n        <input type=\"checkbox\" title=\"Facebook\" name=\"facebook\" checked=\"\">\n        <input type=\"checkbox\" title=\"Twitter\" name=\"twitter\" checked=\"\">\n        <input type=\"checkbox\" title=\"Vkontakte\" name=\"vkontakte\" checked=\"\">\n        <input type=\"checkbox\" title=\"Odnoklassniki\" name=\"odnoklassniki\" checked=\"\">\n        <input type=\"checkbox\" title=\"Pinterest\" name=\"pinterest\" checked=\"\">\n        <input type=\"checkbox\" title=\"Mailru\" name=\"mailru\" checked=\"\">\n        \n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" title=\"Immagine di sfondo\" value=\"../_images/background4.jpg\" parallax=\"\">\n            <input type=\"color\" title=\"Colore di sfondo\" value=\"#ffffff\" selected=\"\">\n            <input type=\"video\" title=\"Video di sfondo\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Sovrapponi\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n        <input type=\"color\" title=\"Colore sovrapposto\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacità\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-md-8 align-center\">\n                <h2 class=\"pb-3 mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title \">\n                    CONDIVIDI LA PAGINA!\n                </h2>\n                <div>\n                    <div class=\"mbr-social-likes\">\n                        <span mbr-if=\"facebook\" class=\"btn btn-social socicon-bg-facebook facebook mx-2\" title=\"Condividi link su Facebook\">\n                            <i class=\"socicon socicon-facebook\"></i>\n                        </span>\n                        <span mbr-if=\"twitter\" class=\"btn btn-social twitter socicon-bg-twitter mx-2\" title=\"Condividi link su Twitter\">\n                            <i class=\"socicon socicon-twitter\"></i>\n                        </span>\n                        <span mbr-if=\"vkontakte\" class=\"btn btn-social vkontakte socicon-bg-vkontakte mx-2\" title=\"Condividi link su VKontakte\">\n                            <i class=\"socicon socicon-vkontakte\"></i>\n                        </span>\n                        <span mbr-if=\"odnoklassniki\" class=\"btn btn-social odnoklassniki socicon-bg-odnoklassniki mx-2\" title=\"Condividi link su Odnoklassniki\">\n                            <i class=\"socicon socicon-odnoklassniki\"></i>\n                        </span>\n                        <span mbr-if=\"pinterest\" class=\"btn btn-social pinterest socicon-bg-pinterest mx-2\" title=\"Condividi link su Pinterest\">\n                            <i class=\"socicon socicon-pinterest\"></i>\n                        </span>\n                        <span mbr-if=\"mailru\" class=\"btn btn-social mailru socicon-bg-mail mx-2\" title=\"Condividi link su Mailru\">\n                            <i class=\"socicon socicon-mail\"></i>\n                        </span>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>\n",
+          "_cid": "rE159V2KGc",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "social-buttons3-v"
         }
       ]
     }
